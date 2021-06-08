@@ -43,7 +43,7 @@
 <body>
 
 
-	<div class="container">
+	<div class="container" id="mainPage">
 
 		<div class="mobile-menu">
 			<section id="collapse">
@@ -143,9 +143,12 @@
 
 				<ul class="filter">
 					<li><a class="active" href="#" data-filter="*">All</a></li>
-					<li><a href="#" data-filter=".print">Print</a></li>
-					<li><a href="#" data-filter=".webdesign">Webdesign</a></li>
-					<li><a href="#" data-filter=".video">Video</a></li>
+					<li><a href="#" data-filter=".cabinets">Cabinets</a></li>
+					<li><a href="#" data-filter=".flooring">Flooring & Tile</a></li>
+					<li><a href="#" data-filter=".furniture">Furniture</a></li>
+					<li><a href="#" data-filter=".faucets">Faucets</a></li>
+					<li><a href="#" data-filter=".video">Leather</a></li>
+
 				</ul>
 
 
@@ -153,70 +156,76 @@
 
 					<!-- PHOTO -->
 
-					<li class="item print"><a
-							onclick="$('#portfolio1').slideDown(); $('#portfolio2, #portfolio3, #portfolio4, #portfolio5, #portfolio6').slideUp(); $('html, body').animate({scrollTop: $('#portfolio_detail').offset().top }, 800);"><img
-								src="http://placehold.it/300x300" alt="EXEMPLE">
+					<div class="modal" id="modal1">
+						<div class="modal-content">
+							<span class="close-button" onclick="toggleModal('modal1')">&times;</span>
+							<iframe src="https://d2ni2l5von5ns2.cloudfront.net/" style="
+							width: 100%;
+							border: none;
+							margin: 0;
+							padding: 0;
+							overflow: hidden;
+							z-index: 999999;
+							height: 100%;
+						  ">
+							</iframe>
+						</div>
+					</div>
+
+					<li class="item flooring"><a onclick="toggleModal('modal1')"><img src="/img/landingpage1.png"
+								alt="EXEMPLE" style="height:250px">
 							<div>
-								<h5>NAME OF WORK</h5>
-								<span>Exemple of span</span>
+								<h5>WEBSITE NAME</h5>
+								<span>Small description</span>
 							</div>
-						</a> </li>
+						</a>
+					</li>
 
 					<!-- PHOTO -->
 
-					<li class="item print"><a
+					<li class="item furniture"><a
 							onclick="$('#portfolio2').slideDown(); $('#portfolio1, #portfolio3, #portfolio4, #portfolio5, #portfolio6').slideUp(); $('html, body').animate({scrollTop: $('#portfolio_detail').offset().top }, 800);"><img
-								src="http://placehold.it/300x300" alt="EXEMPLE">
+								src="/img/landing2.jpg" alt="EXEMPLE" style="height:250px;">
 							<div>
-								<h5>NAME OF WORK</h5>
-								<span>Exemple of span</span>
+								<h5>WEBSITE NAME</h5>
+								<span>Small description</span>
 							</div>
 						</a> </li>
 
 					<!-- PHOTO -->
 
-					<li class="item webdesign"><a
+					<li class="item cabinets"><a
 							onclick="$('#portfolio3').slideDown(); $('#portfolio1, #portfolio2, #portfolio4, #portfolio5, #portfolio6').slideUp(); $('html, body').animate({scrollTop: $('#portfolio_detail').offset().top }, 800);"><img
-								src="http://placehold.it/300x300" alt="EXEMPLE">
+								src="/img/landing3.jpg" alt="EXEMPLE" style="height:250px;">
 							<div>
-								<h5>NAME OF WORK</h5>
-								<span>Exemple of span</span>
+								<h5>WEBSITE NAME</h5>
+								<span>Small description</span>
 							</div>
 						</a> </li>
 
 
 					<!-- PHOTO -->
 
-					<li class="item webdesign"><a
+					<li class="item cabinets"><a
 							onclick="$('#portfolio4').slideDown(); $('#portfolio1, #portfolio2, #portfolio3, #portfolio5, #portfolio6').slideUp(); $('html, body').animate({scrollTop: $('#portfolio_detail').offset().top }, 800);"><img
-								src="http://placehold.it/300x300" alt="EXEMPLE">
+								src="/img/landing4.jpg" alt="EXEMPLE" style="height:250px;">
 							<div>
-								<h5>NAME OF WORK</h5>
-								<span>Exemple of span</span>
+								<h5>WEBSITE NAME</h5>
+								<span>Small description</span>
 							</div>
 						</a> </li>
 
 					<!-- PHOTO -->
 
-					<li class="item webdesign"><a
+					<li class="item faucets"><a
 							onclick="$('#portfolio5').slideDown(); $('#portfolio1, #portfolio2, #portfolio3, #portfolio4, #portfolio6').slideUp(); $('html, body').animate({scrollTop: $('#portfolio_detail').offset().top }, 800);"><img
-								src="http://placehold.it/300x300" alt="EXEMPLE">
+								src="/img/landing5.png" alt="EXEMPLE" style="height:250px">
 							<div>
-								<h5>NAME OF WORK</h5>
-								<span>Exemple of span</span>
+								<h5>WEBSITE NAME</h5>
+								<span>Small description</span>
 							</div>
 						</a> </li>
 
-					<!-- PHOTO -->
-
-					<li class="item video"><a
-							onclick="$('#portfolio6').slideDown(); $('#portfolio1, #portfolio2, #portfolio3, #portfolio4, #portfolio5').slideUp(); $('html, body').animate({scrollTop: $('#portfolio_detail').offset().top }, 800);"><img
-								src="http://placehold.it/300x300" alt="EXEMPLE">
-							<div>
-								<h5>NAME OF WORK</h5>
-								<span>Exemple of span</span>
-							</div>
-						</a> </li>
 
 				</ul>
 
@@ -224,169 +233,44 @@
 
 			<!-- PORTFOLIO DETAIL CONTAINER -->
 
-			<div id="portfolio_detail">
+			<!-- <div id="portfolio_detail"> -->
 
 
-				<!-- PORTFOLIO DETAIL -->
+			<!-- PORTFOLIO DETAIL -->
 
-				<div id="portfolio1" class="row slide_portfolio">
+			<div id="portfolio1" class="row slide_portfolio">
 
-					<div class="seven columns centered">
+				<div class="seven columns centered">
 
-						<img class="closeit" src="img/close.png" alt="Close Project"
-							onclick="$('#portfolio1').slideUp(); $('html, body').animate({scrollTop: $('#works').offset().top -70 }, 800);">
+					<img class="closeit" src="img/close.png" alt="Close Project"
+						onclick="$('#portfolio1').slideUp(); $('html, body').animate({scrollTop: $('#works').offset().top -70 }, 800);">
 
-						<h3>FLAT STUDIO</h3>
+					<h3>FLAT STUDIO</h3>
 
-						<p>Bacon ipsum dolor sit amet shank tri-tip pig, short loin pork belly boudin ground
-							round flank
-							sirloin bresaola filet mignon sausage beef ribs kielbasa. flow freely, we've created
-							a
-							studio where we can not only work but also have fun and learn.</p>
-
-						<img src="http://placehold.it/700x700" alt="EXEMPLE">
-
-						<img src="http://placehold.it/700x700" alt="EXEMPLE">
-
+					<button class="trigger">Click here to trigger the modal!</button>
+					<div class="modal">
+						<div class="modal-content">
+							<span class="close-button">&times;</span>
+							<iframe src="https://d2ni2l5von5ns2.cloudfront.net/" style="
+							width: 100%;
+							border: none;
+							margin: 0;
+							padding: 0;
+							overflow: hidden;
+							z-index: 999999;
+							height: 100%;
+						  ">
+							</iframe>
+						</div>
 					</div>
+
+					<!-- onclick="$('#portfolio1').slideDown(); $('#portfolio2, #portfolio3, #portfolio4, #portfolio5, #portfolio6').slideUp(); $('html, body').animate({scrollTop: $('#portfolio_detail').offset().top }, 800);" -->
 
 				</div>
 
+			</div>
 
-				<!-- PORTFOLIO DETAIL -->
-
-
-				<div id="portfolio2" class="row slide_portfolio">
-
-					<div class="seven columns centered">
-
-						<img class="closeit" src="img/close.png" alt="Close Project"
-							onclick="$('#portfolio2').slideUp(); $('html, body').animate({scrollTop: $('#works').offset().top -70 }, 800);">
-
-						<h3>FLAT STUDIO</h3>
-
-						<p>Bacon ipsum dolor sit amet shank tri-tip pig, short loin pork belly boudin ground
-							round flank
-							sirloin bresaola filet mignon sausage beef ribs kielbasa. flow freely, we've created
-							a
-							studio where we can not only work but also have fun and learn.</p>
-
-						<img src="http://placehold.it/700x700" alt="EXEMPLE">
-
-						<img src="http://placehold.it/700x700" alt="EXEMPLE">
-
-					</div>
-
-				</div>
-
-
-				<!-- PORTFOLIO DETAIL -->
-
-
-				<div id="portfolio3" class="row slide_portfolio">
-
-					<div class="seven columns centered">
-
-						<img class="closeit" src="img/close.png" alt="Close Project"
-							onclick="$('#portfolio3').slideUp(); $('html, body').animate({scrollTop: $('#works').offset().top -70 }, 800);">
-
-						<h3>FLAT STUDIO</h3>
-
-						<p>Bacon ipsum dolor sit amet shank tri-tip pig, short loin pork belly boudin ground
-							round flank
-							sirloin bresaola filet mignon sausage beef ribs kielbasa. flow freely, we've created
-							a
-							studio where we can not only work but also have fun and learn.</p>
-
-						<img src="http://placehold.it/700x700" alt="EXEMPLE">
-
-						<img src="http://placehold.it/700x700" alt="EXEMPLE">
-
-					</div>
-
-				</div>
-
-
-				<!-- PORTFOLIO DETAIL -->
-
-
-				<div id="portfolio4" class="row slide_portfolio">
-
-					<div class="seven columns centered">
-
-						<img class="closeit" src="img/close.png" alt="Close Project"
-							onclick="$('#portfolio4').slideUp(); $('html, body').animate({scrollTop: $('#works').offset().top -70 }, 800);">
-
-						<h3>FLAT STUDIO</h3>
-
-						<p>Bacon ipsum dolor sit amet shank tri-tip pig, short loin pork belly boudin ground
-							round flank
-							sirloin bresaola filet mignon sausage beef ribs kielbasa. flow freely, we've created
-							a
-							studio where we can not only work but also have fun and learn.</p>
-
-						<img src="http://placehold.it/700x700" alt="EXEMPLE">
-
-						<img src="http://placehold.it/700x700" alt="EXEMPLE">
-
-					</div>
-
-				</div>
-
-
-				<!-- PORTFOLIO DETAIL -->
-
-
-				<div id="portfolio5" class="row slide_portfolio">
-
-					<div class="seven columns centered">
-
-						<img class="closeit" src="img/close.png" alt="Close Project"
-							onclick="$('#portfolio5').slideUp(); $('html, body').animate({scrollTop: $('#works').offset().top -70 }, 800);">
-
-						<h3>FLAT STUDIO</h3>
-
-						<p>Bacon ipsum dolor sit amet shank tri-tip pig, short loin pork belly boudin ground
-							round flank
-							sirloin bresaola filet mignon sausage beef ribs kielbasa. flow freely, we've created
-							a
-							studio where we can not only work but also have fun and learn.</p>
-
-						<img src="http://placehold.it/700x700" alt="EXEMPLE">
-
-						<img src="http://placehold.it/700x700" alt="EXEMPLE">
-
-					</div>
-
-				</div>
-
-				<!-- PORTFOLIO DETAIL -->
-
-
-				<div id="portfolio6" class="row slide_portfolio">
-
-					<div class="seven columns centered">
-
-						<img class="closeit" src="img/close.png" alt="Close Project"
-							onclick="$('#portfolio6').slideUp(); $('html, body').animate({scrollTop: $('#works').offset().top -70 }, 800);">
-
-						<h3>FLAT STUDIO</h3>
-
-						<p>Bacon ipsum dolor sit amet shank tri-tip pig, short loin pork belly boudin ground
-							round flank
-							sirloin bresaola filet mignon sausage beef ribs kielbasa. flow freely, we've created
-							a
-							studio where we can not only work but also have fun and learn.</p>
-
-						<img src="http://placehold.it/700x700" alt="EXEMPLE">
-
-						<img src="http://placehold.it/700x700" alt="EXEMPLE">
-
-					</div>
-
-				</div>
-
-			</div> <!-- END PORTFOLIO DETAIL CONTAINER -->
+			<!-- </div> END PORTFOLIO DETAIL CONTAINER -->
 
 
 		</section>
@@ -398,7 +282,7 @@
 		<!-- INTERSECTION ############################################### -->
 
 
-		<section id="interblock">
+		<section id="interblock" style="margin-top:5em">
 
 			<div class="row">
 
@@ -451,13 +335,13 @@
 
 					<li class="service">
 
-						<div class="two columns">
+						<div class="four columns">
 
 							<img src="/img/lightGlass.jpg" alt="EXEMPLE">
 
 						</div>
 
-						<div class="nine columns">
+						<div class="eight columns" style="margin-top:15px">
 
 							<h3>Service 1</h3>
 
@@ -476,13 +360,13 @@
 
 					<li class="service">
 
-						<div class="two columns">
+						<div class="four columns">
 
 							<img src="/img/darkLights.jpg" alt="EXEMPLE">
 
 						</div>
 
-						<div class="nine columns">
+						<div class="eight columns" style="margin-top:15px">
 
 							<h3>Service 2</h3>
 
@@ -501,13 +385,13 @@
 
 					<li class="service">
 
-						<div class="two columns">
+						<div class="four columns">
 
 							<img src="/img/lightSimetricBuilding.jpg" alt="EXEMPLE">
 
 						</div>
 
-						<div class="nine columns">
+						<div class="eight columns" style="margin-top:15px">
 
 							<h3>Service 3</h3>
 
@@ -561,7 +445,7 @@
 
 					<div class="he-wrap tpl3 ">
 
-						<img src="http://placehold.it/300x350" alt="EXEMPLE">
+						<img src="/img/team-1-800x800.jpg" alt="EXEMPLE">
 
 						<div class="he-view">
 
@@ -589,7 +473,7 @@
 
 					<div class="he-wrap tpl3 ">
 
-						<img src="http://placehold.it/300x350" alt="EXEMPLE">
+						<img src="/img/team-2-800x800.jpg" alt="EXEMPLE">
 
 						<div class="he-view">
 
@@ -618,7 +502,7 @@
 
 					<div class="he-wrap tpl3 ">
 
-						<img src="http://placehold.it/300x350" alt="EXEMPLE">
+						<img src="/img/team-3-800x800.jpg" alt="EXEMPLE">
 
 						<div class="he-view">
 
@@ -649,7 +533,7 @@
 
 					<div class="he-wrap tpl3 ">
 
-						<img src="http://placehold.it/300x350" alt="EXEMPLE">
+						<img src="/img/team-4-470x470.png" alt="EXEMPLE">
 
 						<div class="he-view">
 
@@ -858,6 +742,12 @@
 	<script src="js/jquery.hoverex.min.js" type="text/javascript"></script>
 	<!-- Hoverex for social icon on member -->
 	<script src="js/main.js" type="text/javascript"></script> <!-- Main Javascript File -->
+	<script>
+		function toggleModal(modalName) {
+			const modal = document.querySelector(`#${modalName}`);
+			modal.classList.toggle("show-modal");
+		}
+	</script>
 
 </body>
 
