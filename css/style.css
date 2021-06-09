@@ -540,7 +540,8 @@ nav {
 
 
 #header {
-	background: url('../img/darkBlueCircl.jpg');
+	/* background: url('../img/pexels-pixabay-373543.jpg'); */
+	background-image: linear-gradient(rgba(37, 46, 53, 0.2), rgba(37, 46, 53, 0.7), rgba(37, 46, 53, 0.2)), url('../img/pexels-pixabay-373543.jpg');
 	/* COLOR ON MOBILE DEVICE ON LINE 980 */
 	background-position: center;
 	background-size: cover;
