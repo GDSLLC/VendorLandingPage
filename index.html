@@ -1,5 +1,5 @@
 <!doctype html>
-<html class="no-js" lang="en" itemscope itemtype="http://schema.org/Product">
+<html class="no-js" lang="en" itemscope itemtype="http://schema.org/Product" id="pageSelector">
 
 <head>
 
@@ -161,6 +161,7 @@
 					<div class="modal" id="modal1">
 						<div class="modal-content">
 							<span class="close-button" onclick="toggleModal('modal1')">&times;</span>
+							<span class="exitbanner">Return to page</span>
 							<iframe src="https://d2ni2l5von5ns2.cloudfront.net/" style="
 							width: 100%;
 							border: none;
@@ -747,7 +748,9 @@
 	<script>
 		function toggleModal(modalName) {
 			const modal = document.querySelector(`#${modalName}`);
+						const page = document.querySelector('#pageSelector');
 			modal.classList.toggle("show-modal");
+			page.classList.toggle('noOverflow');
 		}
 	</script>
 

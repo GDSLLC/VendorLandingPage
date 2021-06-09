@@ -1431,12 +1431,45 @@ form {
 	left: 50%;
 	transform: translate(-50%, -50%);
 	background-color: white;
-	width: 100%;
-	height: 100%;
+	width: 80%;
+	height: 80%;
 	z-index: 55555;
 }
 
+	.exitbanner {
+		display: none;
+	}
+	
+
+@media only screen and (max-width: 768px) {
+  .modal-content {
+	width: 100%;
+	height: 100%;
+	}
+	.exitbanner {
+		display: block;
+		position: fixed;
+				width: 100%;
+		background-color: rgb(74, 82, 175);
+		    z-index: 999999;
+    font-size: 24px;
+	text-align: center;
+    cursor: pointer;
+	color: white;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	}
+	.close-button {
+		display: none
+	}
+}
+
+.noOverflow {
+	overflow: hidden;
+}
+
 .close-button {
+	display: block;
 	width: 3rem;
 	text-align: center;
 	cursor: pointer;
