@@ -149,7 +149,7 @@
 					<li><a href="#" data-filter=".flooring">Flooring & Tile</a></li>
 					<li><a href="#" data-filter=".furniture">Home Goods</a></li>
 					<li><a href="#" data-filter=".faucets">Faucets</a></li>
-					<li><a href="#" data-filter=".leather">Leather Manufacturer</a></li>
+					<li><a href="#" data-filter=".leather">Leather</a></li>
 
 				</ul>
 
@@ -158,10 +158,10 @@
 
 					<!-- PHOTO -->
 
-					<div class="modal" id="modal1">
+					<div class="modal" id="modalCarpet">
 						<div class="modal-content">
-							<span class="close-button" onclick="toggleModal('modal1')">&times;</span>
-							<span class="exitbanner" onclick="toggleModal('modal1')">Return to page</span>
+							<span class="close-button" onclick="toggleModal('modalCarpet')">&times;</span>
+							<span class="exitbanner" onclick="toggleModal('modalCarpet')">Return to page</span>
 							<iframe src="https://d2ni2l5von5ns2.cloudfront.net/" style="
 							width: 100%;
 							border: none;
@@ -175,8 +175,25 @@
 						</div>
 					</div>
 
-					<li class="item flooring"><a onclick="toggleModal('modal1')"><img src="/img/landingpage1.png"
-								alt="EXEMPLE" style="height:250px">
+					<div class="modal" id="modalFaucets">
+						<div class="modal-content">
+							<span class="close-button" onclick="toggleModal('modalFaucets')">&times;</span>
+							<span class="exitbanner" onclick="toggleModal('modalFaucets')">Return to page</span>
+							<iframe src="https://d2vhuihkuoi3gw.cloudfront.net/" style="
+							width: 100%;
+							border: none;
+							margin: 0;
+							padding: 0;
+							overflow: hidden;
+							z-index: 999999;
+							height: 100%;
+						  ">
+							</iframe>
+						</div>
+					</div>
+
+					<li class="item flooring"><a onclick="toggleModal('modalCarpet')"><img src="/img/landingpage1.png"
+								alt="Floor & Paving Service Inc Website" style="height:250px">
 							<div>
 								<h5>Carpet</h5>
 								<span>Floor & Paving Service Inc.</span>
@@ -186,12 +203,11 @@
 
 					<!-- PHOTO -->
 
-					<li class="item furniture"><a
-							onclick="$('#portfolio2').slideDown(); $('#portfolio1, #portfolio3, #portfolio4, #portfolio5, #portfolio6').slideUp(); $('html, body').animate({scrollTop: $('#portfolio_detail').offset().top }, 800);"><img
-								src="/img/landing2.jpg" alt="EXEMPLE" style="height:250px;">
+					<li class="item furniture"><a onclick="toggleModal('modalFaucets')"><img src="/img/landing2.jpg"
+								alt="Luxury and custom faucets Website" style="height:250px;">
 							<div>
-								<h5>WEBSITE NAME</h5>
-								<span>Small description</span>
+								<h5>Aashi Faucets</h5>
+								<span>Luxury & Custom Faucets</span>
 							</div>
 						</a> </li>
 
@@ -748,7 +764,7 @@
 	<script>
 		function toggleModal(modalName) {
 			const modal = document.querySelector(`#${modalName}`);
-						const page = document.querySelector('#pageSelector');
+			const page = document.querySelector('#pageSelector');
 			modal.classList.toggle("show-modal");
 			page.classList.toggle('noOverflow');
 		}
