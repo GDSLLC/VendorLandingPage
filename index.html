@@ -192,8 +192,26 @@
 						</div>
 					</div>
 
-					<li class="item flooring"><a onclick="toggleModal('modalCarpet')"><img src="/img/landingpage1.png"
-								alt="Floor & Paving Service Inc Website" style="height:250px">
+					<div class="modal" id="modalHome">
+						<div class="modal-content">
+							<span class="close-button" onclick="toggleModal('modalHome')">&times;</span>
+							<span class="exitbanner" onclick="toggleModal('modalHome')">Return to page</span>
+							<iframe src="http://d3rltts0vn908j.cloudfront.net/" style="
+							width: 100%;
+							border: none;
+							margin: 0;
+							padding: 0;
+							overflow: hidden;
+							z-index: 999999;
+							height: 100%;
+						  ">
+							</iframe>
+						</div>
+					</div>
+
+
+					<li class="item flooring"><a onclick="toggleModal('modalCarpet')"><img src="/img/1.png"
+								alt="Floor & Paving Service Inc Website">
 							<div>
 								<h5>Carpet</h5>
 								<span>Floor & Paving Service Inc.</span>
@@ -203,8 +221,8 @@
 
 					<!-- PHOTO -->
 
-					<li class="item furniture"><a onclick="toggleModal('modalFaucets')"><img src="/img/landing2.jpg"
-								alt="Luxury and custom faucets Website" style="height:250px;">
+					<li class="item faucets"><a onclick="toggleModal('modalFaucets')"><img src="/img/2.png"
+								alt="Luxury and custom faucets Website">
 							<div>
 								<h5>Aashi Faucets</h5>
 								<span>Luxury & Custom Faucets</span>
@@ -213,12 +231,11 @@
 
 					<!-- PHOTO -->
 
-					<li class="item cabinets"><a
-							onclick="$('#portfolio3').slideDown(); $('#portfolio1, #portfolio2, #portfolio4, #portfolio5, #portfolio6').slideUp(); $('html, body').animate({scrollTop: $('#portfolio_detail').offset().top }, 800);"><img
-								src="/img/landing3.jpg" alt="EXEMPLE" style="height:250px;">
+					<li class="item furniture"><a onclick="toggleModal('modalHome')"><img src="/img/3.png"
+								alt="Indecor Website">
 							<div>
-								<h5>WEBSITE NAME</h5>
-								<span>Small description</span>
+								<h5>Indecor</h5>
+								<span>All your home goods</span>
 							</div>
 						</a> </li>
 
