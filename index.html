@@ -209,6 +209,24 @@
 						</div>
 					</div>
 
+					<div class="modal" id="modalLeather">
+						<div class="modal-content">
+							<span class="close-button" onclick="toggleModal('modalLeather')">&times;</span>
+							<span class="exitbanner" onclick="toggleModal('modalLeather')">Return to page</span>
+							<iframe src="https://d38jl4qmd28d1c.cloudfront.net/" style="
+							width: 100%;
+							border: none;
+							margin: 0;
+							padding: 0;
+							overflow: hidden;
+							z-index: 999999;
+							height: 100%;
+						  ">
+							</iframe>
+						</div>
+					</div>
+
+
 
 					<li class="item flooring"><a onclick="toggleModal('modalCarpet')"><img src="/img/1.png"
 								alt="Floor & Paving Service Inc Website">
@@ -242,12 +260,12 @@
 
 					<!-- PHOTO -->
 
-					<li class="item leather"><a
-							onclick="$('#portfolio4').slideDown(); $('#portfolio1, #portfolio2, #portfolio3, #portfolio5, #portfolio6').slideUp(); $('html, body').animate({scrollTop: $('#portfolio_detail').offset().top }, 800);"><img
-								src="/img/landing4.jpg" alt="EXEMPLE" style="height:250px;">
+					<li class="item leather"><a onclick="toggleModal('modalLeather')"><img src="/img/4.png"
+								alt="Manufacturer Website">
 							<div>
-								<h5>WEBSITE NAME</h5>
-								<span>Small description</span>
+								<h5>Manufacturer</h5>
+								<span>The
+									world's best leather goods</span>
 							</div>
 						</a> </li>
 
