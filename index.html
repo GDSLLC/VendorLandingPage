@@ -145,7 +145,7 @@
 
 				<ul class="filter">
 					<li><a class="active" href="#" data-filter="*">All</a></li>
-					<li><a href="#" data-filter=".cabinets">Tires</a></li>
+					<li><a href="#" data-filter=".tires">Tires</a></li>
 					<li><a href="#" data-filter=".flooring">Flooring & Tile</a></li>
 					<li><a href="#" data-filter=".furniture">Home Goods</a></li>
 					<li><a href="#" data-filter=".faucets">Faucets</a></li>
@@ -226,13 +226,31 @@
 						</div>
 					</div>
 
+					<div class="modal" id="modalTires">
+						<div class="modal-content">
+							<span class="close-button" onclick="toggleModal('modalTires')">&times;</span>
+							<span class="exitbanner" onclick="toggleModal('modalTires')">Return to page</span>
+							<iframe src="https://d15cz7g98k2dhu.cloudfront.net/" style="
+							width: 100%;
+							border: none;
+							margin: 0;
+							padding: 0;
+							overflow: hidden;
+							z-index: 999999;
+							height: 100%;
+						  ">
+							</iframe>
+						</div>
+					</div>
+
+
 
 
 					<li class="item flooring"><a onclick="toggleModal('modalCarpet')"><img src="/img/1.png"
 								alt="Floor & Paving Service Inc Website">
 							<div>
 								<h5>Carpet</h5>
-								<span>Floor & Paving Service Inc.</span>
+								<span>Only the best floor & paving services</span>
 							</div>
 						</a>
 					</li>
@@ -253,7 +271,7 @@
 								alt="Indecor Website">
 							<div>
 								<h5>Indecor</h5>
-								<span>All your home goods</span>
+								<span>All your home goods in one place</span>
 							</div>
 						</a> </li>
 
@@ -271,12 +289,11 @@
 
 					<!-- PHOTO -->
 
-					<li class="item faucets"><a
-							onclick="$('#portfolio5').slideDown(); $('#portfolio1, #portfolio2, #portfolio3, #portfolio4, #portfolio6').slideUp(); $('html, body').animate({scrollTop: $('#portfolio_detail').offset().top }, 800);"><img
-								src="/img/landing5.png" alt="EXEMPLE" style="height:250px">
+					<li class="item tires"><a onclick="toggleModal('modalTires')"><img src="/img/5.png"
+								alt="Reisen Wheels & Tires">
 							<div>
-								<h5>WEBSITE NAME</h5>
-								<span>Small description</span>
+								<h5>Reisen Wheels & Tires</h5>
+								<span>Give your car a true custom look</span>
 							</div>
 						</a> </li>
 
@@ -291,38 +308,6 @@
 
 
 			<!-- PORTFOLIO DETAIL -->
-
-			<div id="portfolio1" class="row slide_portfolio">
-
-				<div class="seven columns centered">
-
-					<img class="closeit" src="img/close.png" alt="Close Project"
-						onclick="$('#portfolio1').slideUp(); $('html, body').animate({scrollTop: $('#works').offset().top -70 }, 800);">
-
-					<h3>FLAT STUDIO</h3>
-
-					<button class="trigger">Click here to trigger the modal!</button>
-					<div class="modal">
-						<div class="modal-content">
-							<span class="close-button">&times;</span>
-							<iframe src="https://d2ni2l5von5ns2.cloudfront.net/" style="
-							width: 100%;
-							border: none;
-							margin: 0;
-							padding: 0;
-							overflow: hidden;
-							z-index: 999999;
-							height: 100%;
-						  ">
-							</iframe>
-						</div>
-					</div>
-
-					<!-- onclick="$('#portfolio1').slideDown(); $('#portfolio2, #portfolio3, #portfolio4, #portfolio5, #portfolio6').slideUp(); $('html, body').animate({scrollTop: $('#portfolio_detail').offset().top }, 800);" -->
-
-				</div>
-
-			</div>
 
 			<!-- </div> END PORTFOLIO DETAIL CONTAINER -->
 
