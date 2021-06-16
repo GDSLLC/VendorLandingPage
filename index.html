@@ -51,8 +51,6 @@
 					<div class="mobile-menu-inner">
 						<ul class="nav-mobile">
 							<li><a class="selected" href="#vendors">Vendors</a></li>
-							<li><a href="#whatwedo">Services</a></li>
-							<li><a href="#team">About</a></li>
 							<li><a href="#contact">Contact</a></li>
 							<li><a href="/api" target="_blank">API</a></li>
 						</ul>
@@ -64,9 +62,6 @@
 			</a>
 		</div>
 
-		<!-- NAVIGATION ############################################### -->
-
-
 		<div class="cbp-af-header">
 
 			<nav class="row">
@@ -76,8 +71,6 @@
 				<ul id="nav">
 					<li><a onclick="window.open('/api', '_blank')">API</a></li>
 					<li><a href="#contact">Contact</a></li>
-					<li><a href="#team">About</a></li>
-					<li><a href="#whatwedo">Services</a></li>
 					<li><a class="selected" href="#vendors">Vendors</a></li>
 				</ul>
 
@@ -160,15 +153,46 @@
 
 					<div class="modal" id="modalCarpet">
 						<div class="modal-content">
-							<span class="close-button" onclick="toggleModal('modalCarpet')">&times;</span>
-							<span class="exitbanner" onclick="toggleModal('modalCarpet')">Return to page</span>
+							<div class="mobile-menus">
+								<span class="exitbanner" onclick="toggleModal('modalCarpet')">Return to page</span>
+								<ul id="nav">
+									<li style='float:none;'><a style="padding:0px" href="#vendors"
+											onclick="toggleModal('modalCarpet');">Vendors</a>
+									</li>
+									<li style='float:none;'><a style="padding:0px" href="#contact"
+											onclick="toggleModal('modalCarpet');">Contact</a></li>
+									<li style='float:none;'><a style="padding:0px" href="#vendors"
+											onclick="window.open('/api', '_blank')">API</a></li>
+
+								</ul>
+							</div>
+							<div class="cbp-af-headers">
+								<span class="close-button" onclick="toggleModal('modalCarpet')">&times;</span>
+								<nav class="row" style="height: unset;">
+
+									<div id="logo" style="width: 60px;padding:0px"><a href="/"
+											onclick="toggleModal('modalCarpet');"><img loading='lazy' alt="YOURLOGO"
+												src="img/logo.png"></a></div>
+
+									<ul id="nav" style="padding-top: 20px;">
+										<li style="padding:0px"><a style="line-height: inherit;" href="#vendors"
+												onclick="window.open('/api', '_blank')">API</a></li>
+										<li style="padding:0px"><a style="line-height: inherit;" href="#contact"
+												onclick="toggleModal('modalCarpet');">Contact</a></li>
+										<li style="padding:0px"><a style="line-height: inherit;" href="#vendors"
+												onclick="toggleModal('modalCarpet');">Vendors</a>
+										</li>
+									</ul>
+
+								</nav>
+							</div>
 							<iframe src="https://d2ni2l5von5ns2.cloudfront.net/" style="
 							width: 100%;
 							border: none;
 							margin: 0;
 							padding: 0;
 							overflow: hidden;
-							z-index: 999999;
+							z-index: 9999;
 							height: 100%;
 						  ">
 							</iframe>
@@ -177,8 +201,39 @@
 
 					<div class="modal" id="modalFaucets">
 						<div class="modal-content">
-							<span class="close-button" onclick="toggleModal('modalFaucets')">&times;</span>
-							<span class="exitbanner" onclick="toggleModal('modalFaucets')">Return to page</span>
+							<div class="mobile-menus">
+								<span class="exitbanner" onclick="toggleModal('modalFaucets')">Return to page</span>
+								<ul id="nav">
+									<li style='float:none;'><a style="padding:0px" href="#vendors"
+											onclick="toggleModal('modalFaucets');">Vendors</a>
+									</li>
+									<li style='float:none;'><a style="padding:0px" href="#contact"
+											onclick="toggleModal('modalFaucets');">Contact</a></li>
+									<li style='float:none;'><a style="padding:0px" href="#vendors"
+											onclick="window.open('/api', '_blank')">API</a></li>
+
+								</ul>
+							</div>
+							<div class="cbp-af-headers">
+								<span class="close-button" onclick="toggleModal('modalFaucets')">&times;</span>
+								<nav class="row" style="height: unset;">
+
+									<div id="logo" style="width: 60px;padding:0px"><a href="/"
+											onclick="toggleModal('modalFaucets');"><img loading='lazy' alt="YOURLOGO"
+												src="img/logo.png"></a></div>
+
+									<ul id="nav" style="padding-top: 20px;">
+										<li style="padding:0px"><a style="line-height: inherit;" href="#vendors"
+												onclick="window.open('/api', '_blank')">API</a></li>
+										<li style="padding:0px"><a style="line-height: inherit;" href="#contact"
+												onclick="toggleModal('modalFaucets');">Contact</a></li>
+										<li style="padding:0px"><a style="line-height: inherit;" href="#vendors"
+												onclick="toggleModal('modalFaucets');">Vendors</a>
+										</li>
+									</ul>
+
+								</nav>
+							</div>
 							<iframe src="https://d2vhuihkuoi3gw.cloudfront.net/" style="
 							width: 100%;
 							border: none;
@@ -194,8 +249,39 @@
 
 					<div class="modal" id="modalHome">
 						<div class="modal-content">
-							<span class="close-button" onclick="toggleModal('modalHome')">&times;</span>
-							<span class="exitbanner" onclick="toggleModal('modalHome')">Return to page</span>
+							<div class="mobile-menus">
+								<span class="exitbanner" onclick="toggleModal('modalHome')">Return to page</span>
+								<ul id="nav">
+									<li style='float:none;'><a style="padding:0px" href="#vendors"
+											onclick="toggleModal('modalHome');">Vendors</a>
+									</li>
+									<li style='float:none;'><a style="padding:0px" href="#contact"
+											onclick="toggleModal('modalHome');">Contact</a></li>
+									<li style='float:none;'><a style="padding:0px" href="#vendors"
+											onclick="window.open('/api', '_blank')">API</a></li>
+
+								</ul>
+							</div>
+							<div class="cbp-af-headers">
+								<span class="close-button" onclick="toggleModal('modalHome')">&times;</span>
+								<nav class="row" style="height: unset;">
+
+									<div id="logo" style="width: 60px;padding:0px"><a href="/"
+											onclick="toggleModal('modalHome');"><img loading='lazy' alt="YOURLOGO"
+												src="img/logo.png"></a></div>
+
+									<ul id="nav" style="padding-top: 20px;">
+										<li style="padding:0px"><a style="line-height: inherit;" href="#vendors"
+												onclick="window.open('/api', '_blank')">API</a></li>
+										<li style="padding:0px"><a style="line-height: inherit;" href="#contact"
+												onclick="toggleModal('modalHome');">Contact</a></li>
+										<li style="padding:0px"><a style="line-height: inherit;" href="#vendors"
+												onclick="toggleModal('modalHome');">Vendors</a>
+										</li>
+									</ul>
+
+								</nav>
+							</div>
 							<iframe src="https://d3rltts0vn908j.cloudfront.net/" style="
 							width: 100%;
 							border: none;
@@ -211,8 +297,39 @@
 
 					<div class="modal" id="modalLeather">
 						<div class="modal-content">
-							<span class="close-button" onclick="toggleModal('modalLeather')">&times;</span>
-							<span class="exitbanner" onclick="toggleModal('modalLeather')">Return to page</span>
+							<div class="mobile-menus">
+								<span class="exitbanner" onclick="toggleModal('modalLeather')">Return to page</span>
+								<ul id="nav">
+									<li style='float:none;'><a style="padding:0px" href="#vendors"
+											onclick="toggleModal('modalLeather');">Vendors</a>
+									</li>
+									<li style='float:none;'><a style="padding:0px" href="#contact"
+											onclick="toggleModal('modalLeather');">Contact</a></li>
+									<li style='float:none;'><a style="padding:0px" href="#vendors"
+											onclick="window.open('/api', '_blank')">API</a></li>
+
+								</ul>
+							</div>
+							<div class="cbp-af-headers">
+								<span class="close-button" onclick="toggleModal('modalLeather')">&times;</span>
+								<nav class="row" style="height: unset;">
+
+									<div id="logo" style="width: 60px;padding:0px"><a href="/"
+											onclick="toggleModal('modalLeather');"><img loading='lazy' alt="YOURLOGO"
+												src="img/logo.png"></a></div>
+
+									<ul id="nav" style="padding-top: 20px;">
+										<li style="padding:0px"><a style="line-height: inherit;" href="#vendors"
+												onclick="window.open('/api', '_blank')">API</a></li>
+										<li style="padding:0px"><a style="line-height: inherit;" href="#contact"
+												onclick="toggleModal('modalLeather');">Contact</a></li>
+										<li style="padding:0px"><a style="line-height: inherit;" href="#vendors"
+												onclick="toggleModal('modalLeather');">Vendors</a>
+										</li>
+									</ul>
+
+								</nav>
+							</div>
 							<iframe src="https://d38jl4qmd28d1c.cloudfront.net/" style="
 							width: 100%;
 							border: none;
@@ -228,8 +345,39 @@
 
 					<div class="modal" id="modalTires">
 						<div class="modal-content">
-							<span class="close-button" onclick="toggleModal('modalTires')">&times;</span>
-							<span class="exitbanner" onclick="toggleModal('modalTires')">Return to page</span>
+							<div class="mobile-menus">
+								<span class="exitbanner" onclick="toggleModal('modalTires')">Return to page</span>
+								<ul id="nav">
+									<li style='float:none;'><a style="padding:0px" href="#vendors"
+											onclick="toggleModal('modalTires');">Vendors</a>
+									</li>
+									<li style='float:none;'><a style="padding:0px" href="#contact"
+											onclick="toggleModal('modalTires');">Contact</a></li>
+									<li style='float:none;'><a style="padding:0px" href="#vendors"
+											onclick="window.open('/api', '_blank')">API</a></li>
+
+								</ul>
+							</div>
+							<div class="cbp-af-headers">
+								<span class="close-button" onclick="toggleModal('modalTires')">&times;</span>
+								<nav class="row" style="height: unset;">
+
+									<div id="logo" style="width: 60px;padding:0px"><a href="/"
+											onclick="toggleModal('modalTires');"><img loading='lazy' alt="YOURLOGO"
+												src="img/logo.png"></a></div>
+
+									<ul id="nav" style="padding-top: 20px;">
+										<li style="padding:0px"><a style="line-height: inherit;" href="#vendors"
+												onclick="window.open('/api', '_blank')">API</a></li>
+										<li style="padding:0px"><a style="line-height: inherit;" href="#contact"
+												onclick="toggleModal('modalTires');">Contact</a></li>
+										<li style="padding:0px"><a style="line-height: inherit;" href="#vendors"
+												onclick="toggleModal('modalTires');">Vendors</a>
+										</li>
+									</ul>
+
+								</nav>
+							</div>
 							<iframe src="https://d15cz7g98k2dhu.cloudfront.net/" style="
 							width: 100%;
 							border: none;
@@ -321,289 +469,7 @@
 		<!-- INTERSECTION ############################################### -->
 
 
-		<section id="interblock" style="margin-top:5em">
-
-			<div class="row">
-
-				<div class="nine columns">
-
-					<h2>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor.</h2>
-
-					<p>Learn how you can join our network.</p>
-
-				</div>
-
-				<div class="three columns buttongo">
-
-					<a href="#whatwedo"><i class='icon' data-icon="&#xe105;"></i></a>
-
-				</div>
-
-
-			</div>
-
-		</section>
-
-
-		<!-- END INTERSECTION ############################################### -->
-
-
-		<!-- SERVICES SECTION ############################################### -->
-
-
-		<div class="row">
-
-			<div class="twelve columns">
-
-				<h3>What we do</h3>
-
-			</div>
-
-		</div>
-
-
-		<section id="whatwedo">
-
-
-			<div class="row">
-
-
-				<ul class="one_up tiles">
-
-					<!-- SERVICE !-->
-
-					<li class="service">
-
-						<div class="four columns">
-
-							<img loading='lazy' src="/img/lightGlass.jpg" alt="EXEMPLE">
-
-						</div>
-
-						<div class="eight columns" style="margin-top:15px">
-
-							<h3>Service 1</h3>
-
-							<p>Bacon ipsum dolor sit amet shank tri-tip pig, short loin pork belly boudin
-								ground round
-								flank sirloin bresaola filet mignon sausage beef ribs kielbasa. flow freely,
-								we've
-								created a studio where we can not only work but also have fun and learn.
-							</p>
-
-						</div>
-
-					</li>
-
-					<!-- SERVICE !-->
-
-					<li class="service">
-
-						<div class="four columns">
-
-							<img loading='lazy' src="/img/darkLights.jpg" alt="EXEMPLE">
-
-						</div>
-
-						<div class="eight columns" style="margin-top:15px">
-
-							<h3>Service 2</h3>
-
-							<p>Bacon ipsum dolor sit amet shank tri-tip pig, short loin pork belly boudin
-								ground round
-								flank sirloin bresaola filet mignon sausage beef ribs kielbasa. flow freely,
-								we've
-								created a studio where we can not only work but also have fun and learn.
-							</p>
-
-						</div>
-
-					</li>
-
-					<!-- SERVICE !-->
-
-					<li class="service">
-
-						<div class="four columns">
-
-							<img loading='lazy' src="/img/lightSimetricBuilding.jpg" alt="EXEMPLE">
-
-						</div>
-
-						<div class="eight columns" style="margin-top:15px">
-
-							<h3>Service 3</h3>
-
-							<p>Bacon ipsum dolor sit amet shank tri-tip pig, short loin pork belly boudin
-								ground round
-								flank sirloin bresaola filet mignon sausage beef ribs kielbasa. flow freely,
-								we've
-								created a studio where we can not only work but also have fun and learn.
-							</p>
-
-						</div>
-
-					</li>
-
-				</ul>
-
-			</div>
-
-
-		</section>
-
-		<!-- END SERVICES SECTION ############################################### -->
-
-
-
-		<!-- TEAM SECTION ############################################### -->
-
-
-		<!-- Title /-->
-
-
-		<div class="row">
-
-			<div class="twelve columns">
-
-				<h3>About Us</h3>
-
-			</div>
-
-		</div>
-
-
-		<section id="team">
-
-
-			<div class="row">
-
-				<!-- MEMBER /-->
-
-				<div class="three columns member">
-
-					<div class="he-wrap tpl3 ">
-
-						<img loading='lazy' src="/img/team-1-800x800.jpg" alt="EXEMPLE">
-
-						<div class="he-view">
-
-							<div class="info-bottom a0" data-animate="fadeInUp">
-
-								<a href="#" target="_blank"><i class="icon" data-icon="&#xe045;"></i></a>
-
-								<a href="#" target="_blank"><i class='icon' data-icon="&#xe033;"></i></a>
-
-							</div>
-
-						</div>
-
-					</div>
-
-					<h3>Denis Calis</h3>
-
-					<h4>CEO / FOUNDER</h4>
-
-				</div>
-
-				<!-- MEMBER /-->
-
-				<div class="three columns member">
-
-					<div class="he-wrap tpl3 ">
-
-						<img loading='lazy' src="/img/team-2-800x800.jpg" alt="EXEMPLE">
-
-						<div class="he-view">
-
-							<div class="info-bottom a0" data-animate="fadeInUp">
-
-								<a href="#" target="_blank"><i class="icon" data-icon="&#xe045;"></i></a>
-
-								<a href="#" target="_blank"><i class='icon' data-icon="&#xe033;"></i></a>
-
-								<a href="#" target="_blank"><i class="icon" data-icon="&#xe034;"></i></a>
-
-							</div>
-
-						</div>
-
-					</div>
-
-					<h3>Martine Brux</h3>
-
-					<h4>CTO</h4>
-				</div>
-
-				<!-- MEMBER /-->
-
-				<div class="three columns member">
-
-					<div class="he-wrap tpl3 ">
-
-						<img loading='lazy' src="/img/team-3-800x800.jpg" alt="EXEMPLE">
-
-						<div class="he-view">
-
-							<div class="info-bottom a0" data-animate="fadeInUp">
-
-								<a href="#" target="_blank"><i class="icon" data-icon="&#xe045;"></i></a>
-
-								<a href="#" target="_blank"><i class='icon' data-icon="&#xe033;"></i></a>
-
-								<a href="#" target="_blank"><i class='icon' data-icon="&#xe042;"></i></a>
-
-
-							</div>
-
-						</div>
-
-					</div>
-
-					<h3>Jack Brel</h3>
-
-					<h4>UX/UI Dsesigner</h4>
-
-				</div>
-
-				<!-- MEMBER /-->
-
-				<div class="three columns member">
-
-					<div class="he-wrap tpl3 ">
-
-						<img loading='lazy' src="/img/team-4-470x470.png" alt="EXEMPLE">
-
-						<div class="he-view">
-
-							<div class="info-bottom a0" data-animate="fadeInUp">
-
-								<a href="#" target="_blank"><i class="icon" data-icon="&#xe045;"></i></a>
-
-								<a href="#" target="_blank"><i class='icon' data-icon="&#xe03a;"></i></a>
-
-							</div>
-
-						</div>
-
-					</div>
-
-					<h3>Manon Delux</h3>
-
-					<h4>Backend Developer</h4>
-
-				</div>
-
-			</div>
-
-			<div class="row">
-
-				<!-- MEMBER /-->
-
-
-
-			</div>
-
+		<section id="interblock" style="margin-top:5em;padding: 20px 0px">
 
 		</section>
 
@@ -611,24 +477,6 @@
 
 
 		<!-- INTERSECTION ( TEMPLATE DOWNLOAD ) ############################################### -->
-
-
-		<section id="getit">
-
-			<div class="row">
-
-				<div class="twelve columns centered">
-
-					<h2>Want to join our network?</h2>
-
-					<a class="buttomTwo" href="/api" target="_blank">View API</a>
-
-				</div>
-
-			</div>
-
-		</section>
-
 
 		<!-- END INTERSECTION ############################################### -->
 

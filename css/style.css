@@ -360,6 +360,7 @@ nav {
 	padding: 10px 0;
 }
 
+
 /* The main navigation links */
 #nav>li>a {
 	/* Layout */
@@ -527,6 +528,50 @@ nav {
 }
 
 .cbp-af-header.cbp-af-header-shrink #nav a {
+	line-height: 60px;
+}
+
+.cbp-af-headers {
+	width: 100%;
+	background: #FFF;
+	z-index: 10000;
+	border-bottom: 1px solid #e5e5e5;
+	overflow: hidden;
+	-webkit-transition: height 0.3s;
+	-moz-transition: height 0.3s;
+	transition: height 0.3s;
+}
+
+/* FOR REDUCING THE HEIGHT OF THE NAVIGATION */
+
+.cbp-af-headers #logo {
+	padding: 30px 30px 0px 0px;
+	width: 90px;
+}
+
+.cbp-af-headers #nav a {
+	line-height: 100px;
+}
+
+.cbp-af-headers.cbp-af-header-shrink #logo {
+	padding: 20px 20px 0px 0px;
+	width: 60px;
+}
+
+/* Transitions and class for reduced height */
+
+.cbp-af-headers #logo,
+.cbp-af-headers #nav a {
+	-webkit-transition: all 0.3s;
+	-moz-transition: all 0.3s;
+	transition: all 0.3s;
+}
+
+.cbp-af-headers.cbp-af-header-shrink {
+	height: 80px;
+}
+
+.cbp-af-headers.cbp-af-header-shrink #nav a {
 	line-height: 60px;
 }
 
@@ -1153,6 +1198,20 @@ form {
 	padding-bottom: 10px;
 }
 
+.mobile-menus {
+	display: none;
+	background: #FFF;
+	width: 100%;
+	z-index: 99999999;
+	border-bottom: 1px solid #BBB;
+}
+
+
+.mobile-menus .row {
+	background: #F5F5F5;
+	padding-top: 10px;
+	padding-bottom: 10px;
+}
 
 .mobile-menu-inner .nav-mobile li {
 	color: #4D4C4C;
@@ -1212,6 +1271,18 @@ form {
 	text-transform: uppercase;
 }
 
+.mobile-menus h3 {
+	background: url("../img/line.gif") no-repeat scroll center 55px transparent;
+	color: #4D4C4C;
+	font: 16px 'Lato', sans-serif;
+	letter-spacing: 2px;
+	font-weight: 700;
+	padding-bottom: 35px;
+	padding-top: 25px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
 
 /* Styling for mobile devices */
 
@@ -1221,6 +1292,10 @@ form {
 	/* Display the mobile menu */
 
 	.mobile-menu {
+		display: block;
+	}
+
+	.mobile-menus {
 		display: block;
 	}
 
@@ -1239,6 +1314,10 @@ form {
 	/* Not Showing the Navigation */
 
 	.cbp-af-header {
+		display: none;
+	}
+
+	.cbp-af-headers {
 		display: none;
 	}
 
@@ -1427,12 +1506,12 @@ form {
 
 .modal-content {
 	position: absolute;
-	top: 50%;
+	top: 45%;
 	left: 50%;
 	transform: translate(-50%, -50%);
 	background-color: white;
 	width: 80%;
-	height: 80%;
+	height: 75%;
 	z-index: 55555;
 }
 
@@ -1444,12 +1523,12 @@ form {
 @media only screen and (max-width: 768px) {
 	.modal-content {
 		width: 100%;
+		top: 50%;
 		height: 100%;
 	}
 
 	.exitbanner {
 		display: block;
-		position: fixed;
 		width: 100%;
 		background-color: rgb(74, 82, 175);
 		z-index: 999999;
@@ -1462,7 +1541,8 @@ form {
 	}
 
 	.close-button {
-		display: none
+		display: none;
+		position: unset;
 	}
 }
 
@@ -1471,6 +1551,7 @@ form {
 }
 
 .close-button {
+	position: absolute;
 	display: block;
 	width: 3rem;
 	text-align: center;
@@ -1480,7 +1561,6 @@ form {
 	background-color: rgb(189, 37, 37);
 	z-index: 999999;
 	font-size: 30px;
-	position: fixed;
 	border-radius: 0px
 }
 
